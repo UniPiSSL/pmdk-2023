@@ -1,0 +1,69 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "R4NS0MW4R3"
+author: "sem1tonos <aristressos@ssl-unipi.gr>"
+homepage: "https://ssl.ds.unipi.gr/"
+category: Κρυπτογραφία
+description: "![pc-on-fire](/files/f2c4261e3eda3dfee00e2987292376c8/challenge_12.png)\n\nΗ εταιρεία μας έπεσε θύμα κυβερνοεπίθεσης κατά την οποία κάποιοι πήραν πρόσβαση στον κεντρικό διακομιστή μας και κρυπτογράφησε όλα τα αρχεία μας. Οι κακοποιοί επικοινώνησαν μαζί μας και μας ζητάνε λίτρα για να μας δώσουν το κλειδί για την αποκρυπτογράφηση, αλλά το ποσό είναι τεράστιο για την εταιρεία μας. Αν δεν μας βοηθήσεις θα χάσουμε όλα μας τα αρχεία για πάντα!"
+value: 600
+type: dynamic
+
+# The extra field provides additional fields for data during the install/sync commands/
+# Fields in extra can be used to supply additional information for other challenge types
+# For example the follow extra field is for dynamic challenges. To use these following
+# extra fields, set the type to "dynamic" and uncomment the "extra" section below
+extra:
+    initial: 600
+    decay: 20
+    minimum: 200
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+    # A static case sensitive flag
+    - FLAG{Too_many_leakzzz}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - bruteforce
+    - aes ecb
+    - ransomware
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Υπερβολικά δύσκολη
+    - Κρυπτογραφία
+    - Προγραμματισμός
+    - Cryptography
+    - Programming
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - dist/crypto_ransomware.zip
+
+# Hints are used to give players a way to buy or have suggestions. They are not
+# required but can be nice.
+# Can be removed if unused
+# Accepts dictionaries or strings
+hints:
+    #- {
+    #    content: "No hints.",
+    #    cost: 0
+    #}
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

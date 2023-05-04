@@ -1,0 +1,72 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "QR και κώδικες"
+author: "Athanasios Vasileios Grammatopoulos <gramthanos@gmail.com>"
+homepage: "https://ssl.ds.unipi.gr/"
+category: Διάφορα
+description: "![qr-codes](/files/fc401142daef7d3a7cdc1a8b6c64237f/challenge_05.png)\n\nΠροσπαθώ να σαρώσω αυτό τον κωδικό QR αλλά δεν δουλεύει.\nΣε εσένα δουλεύει;"
+value: 600
+type: dynamic
+
+# The extra field provides additional fields for data during the install/sync commands/
+# Fields in extra can be used to supply additional information for other challenge types
+# For example the follow extra field is for dynamic challenges. To use these following
+# extra fields, set the type to "dynamic" and uncomment the "extra" section below
+extra:
+    initial: 600
+    decay: 20
+    minimum: 200
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+    # A static case sensitive flag
+    - {
+        type: "static",
+        content: "FLAG{2e98033e5c082ec1d0962fe34aacb10f}",
+        data: "case_insensitive",
+    }
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Κωδικοποιήσεις
+    - Morse Code
+    - HEX to ASCII
+
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Εύκολη
+    - Διάφορα
+    - Misc
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - dist/misc_qr_and_codes.zip
+
+# Hints are used to give players a way to buy or have suggestions. They are not
+# required but can be nice.
+# Can be removed if unused
+# Accepts dictionaries or strings
+hints:
+    #- {
+    #    content: "Thi is affected by corrupted magic power!",
+    #    cost: 0
+    #}
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

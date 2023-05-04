@@ -1,0 +1,10 @@
+
+# The files where uploaded on Trello
+# In a public board
+
+# Install the required libaries
+sudo apt-get install libcurl4-openssl-dev
+
+# Compile application
+gcc updater.c -o updater -lcurl -lcjson
+

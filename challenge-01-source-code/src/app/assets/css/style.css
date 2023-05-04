@@ -1,0 +1,23 @@
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	overflow: hidden;
+	background: #000;
+}
+
+#canvas {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/*
+Flag Part 2: 56f689b1b8ec1a798311ddc
+*/

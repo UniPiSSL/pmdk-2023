@@ -1,0 +1,19 @@
+To complete the specific challenges you have to  follow a number of steps.
+
+1. Combine the 3 strings.
+2. Encode the produced string with the md5 hash function.
+3. Add the hash to the flag format.
+
+Example:
+
+Let's pretend that we've cracked the three hashes and the following results produced:
+
+1 - A
+2 - B
+3 - C
+
+To sovle the challenge we have to: 
+
+1. Combine the 3 strings: ABC
+2. Encode the produced string with the md5 hash function: 902fbdd2b1df0c4f70b4a5d23525e932
+3. Add the hash to the flag format: FLAG{902fbdd2b1df0c4f70b4a5d23525e932}

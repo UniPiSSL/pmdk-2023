@@ -1,0 +1,9 @@
+{
+	"version" : {
+		"name" : "v3.1",
+		"major" : 3,
+		"minor" : 1,
+
+		"changelog" : "We imporved the sercurity of the application! Your data are always safe!"
+	}
+}

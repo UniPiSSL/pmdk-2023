@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Secure Chat</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+		<link href="chat.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<main class="content" id="app">
+			<div class="container-fluid fullh">
+
+				<div class="fullh">
+					<div class="row fullh">
+						<div class="col-12 col-md-4 col-lg-5 col-xl-3 border-right d-none d-md-block">
+
+							<div class="px-4 py-2 d-block">
+								<h1 class="h3 mb-3">Secure Chat</h1>
+							</div>
+
+							<div id="connected-users"></div>
+						</div>
+						<div class="col-12 col-md-8 col-lg-7 col-xl-9 chat-wrapper">
+							<div class="py-2 px-4 border-bottom d-block chat-wrapper-top">
+								<div class="d-flex align-items-center py-1">
+									<div class="position-relative">
+										<div class="anonymous-picture rounded-circle mr-1">
+											<i class="fa-solid fa-lock"></i>
+										</div>
+									</div>
+									<div class="flex-grow-1 pl-3">
+										<strong>Encrypted Session</strong>
+										<div class="text-muted small"><em id="session-state">connecting ...</em></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="chat-messages p-4" id="chat-messages"></div>
+
+							<div class="flex-grow-0 py-3 px-4 border-top chat-wrapper-bottom">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Type your message" id="message-input">
+									<button class="btn btn-primary" id="message-send">Send</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="sjcl.js"></script>
+		<script src="chat.js"></script>
+
+	</body>
+</html>

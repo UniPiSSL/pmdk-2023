@@ -1,0 +1,70 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Μαγειρική στο Διαδίκτυο"
+author: "Athanasios Vasileios Grammatopoulos <gramthanos@gmail.com>"
+homepage: "https://ssl.ds.unipi.gr/"
+category: Παγκόσμιος Ιστός
+description: "![cookies](/files/865af97576cd9ada9557c766f3d24d21/challenge_demo_01.png)\n\nΑυτή η ιστοσελίδα λένε πως έχει τις καλύτερες συνταγές για γλυκά. Μου είπαν πως η συνταγή για τα μπισκότα είναι η καλύτερη! Δυστυχώς όμως δεν είναι διαθέσιμη πια…"
+value: 1
+type: standard
+
+# The extra field provides additional fields for data during the install/sync commands/
+# Fields in extra can be used to supply additional information for other challenge types
+# For example the follow extra field is for dynamic challenges. To use these following
+# extra fields, set the type to "dynamic" and uncomment the "extra" section below
+#extra:
+#    initial: 600
+#    decay: 25
+#    minimum: 25
+
+# connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
+connection_info: http://challenge-web-cooking.ctflib.eu
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+    # A static case sensitive flag
+    - CTFLIB{cre4T1nG-w3b-cO0kies-1s-fUn}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    #- 
+
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Demo
+    - Εύκολη
+    - Παγκόσμιος Ιστός
+    - Web
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    #- no files
+
+# Hints are used to give players a way to buy or have suggestions. They are not
+# required but can be nice.
+# Can be removed if unused
+# Accepts dictionaries or strings
+hints:
+    - {
+        content: "Σε αυτήν την δοκιμασία η κρυμμένη σημαία (flag) είναι της μορφής: `CTFLIB{ex4mpl3-fl4g}`",
+        cost: 0
+    }
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

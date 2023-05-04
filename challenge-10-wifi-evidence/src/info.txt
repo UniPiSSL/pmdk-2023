@@ -1,0 +1,28 @@
+App will be at
+http://secure-app.pmdk.ctflib.eu:4242/
+
+WiFi password will be
+lamborghini
+WiFi name will be
+EasyMoney
+
+Command to prepare WiFi capturing
+sudo airmon-ng check kill
+sudo airmon-ng start wlan0
+sudo ifconfig wlan0 down && sudo ifconfig wlan0 up
+sudo airodump-ng -w try1 --manufacturer --channel 1 --essid EasyMoney wlan0
+
+Wireshark WPA key
+lamborghini:EasyMoney
+
+Steps to create challenge
+Step 1: Launch a hotspot with the name "EasyMoney" and password "lamborghini"
+Step 2: Start capturing the traffic on that network
+Step 3: Open the webapp on an other client that is not on that network
+Step 4: Connect client device on the network using the password
+Step 5: Open the webapp on the browser
+Step 6: Start the script between the 2 clients
+
+Problems:
+- Too many packages were lost or malformed
+- We can do the process about 15 times to get good results for the pcap files

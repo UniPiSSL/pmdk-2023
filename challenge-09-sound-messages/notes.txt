@@ -1,0 +1,14 @@
+pt: FLAG{M0RS3_C0D3_1S_B3TT3R_W1TH_X0R_0P3R4T1ONS}
+
+Description FLAG{decrypted_message}
+
+
+key: 0x2
+
+
+xor : O2PQ1/A2F1/3Q/@1VV1P/U3VJ/Z2P/2R1P6V3MLQ
+
+
+morse: --- ..--- .--. --.- .---- -..-. .- ..--- ..-. .---- -..-. ...-- --.- -..-. .--.-. .---- ...- ...- .---- .--. -..-. ..- ...-- ...- .--- -..-. --.. ..--- .--. -..-. ..--- .-. .---- .--. -.... ...- ...-- -- .-.. --.-
+
+The user will be provided with 2 morce code files. The first one will contain the cipretext and the othe other one the attack the user have to perform.
